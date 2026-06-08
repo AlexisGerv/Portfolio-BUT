@@ -46,7 +46,7 @@ export default function Project(props) {
         </div>
         <div className="star eval">
           <div className="star-label">Auto-évaluation & pistes d'amélioration</div>
-          <p>{s.eval}</p>
+          <div className="eval-content">{s.eval}</div>
           <div className="axis"><b>Axe de progression — </b>{s.axis}</div>
         </div>
         <div className="ac-list">

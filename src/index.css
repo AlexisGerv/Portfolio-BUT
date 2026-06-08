@@ -663,6 +663,19 @@ header.nav {
   color: var(--ink);
 }
 
+.eval-content {
+  color: var(--ink-2);
+}
+
+.eval-content p {
+  margin: 0 0 10px;
+  color: var(--ink-2);
+}
+
+.eval-content p:last-child {
+  margin-bottom: 0;
+}
+
 .star.eval .axis {
   margin-top: 10px;
   font-size: 14.5px;
