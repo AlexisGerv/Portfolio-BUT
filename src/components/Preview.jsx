@@ -5,6 +5,7 @@ import CyberInfra from './CyberInfra';
 import PdfViewer from './PdfViewer';
 import DashboardLaunch from './DashboardLaunch';
 import Gallery from './Gallery';
+import StagePreview from './StagePreview';
 
 export default function Preview(props) {
   const id = props.id;
@@ -12,7 +13,8 @@ export default function Preview(props) {
   const hasPdf = id && Object.keys(PDFS).includes(id);
   const hasGallery = id && Object.keys(GALLERIES).includes(id);
 
-  if (id === "solaire") body = <SolarSystemPreview />;
+  if (id === "stage") body = <StagePreview />;
+  else if (id === "solaire") body = <SolarSystemPreview />;
   else if (id === "cyber") body = <CyberInfra />;
   else if (hasPdf) body = <PdfViewer id={id} />;
   else if (id === "dataviz") body = <DashboardLaunch />;

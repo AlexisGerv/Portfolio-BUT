@@ -1,11 +1,11 @@
 import React from 'react';
 
 export const COMPETENCES = {
-  DEV:   { key:"DEV",   label:"Développer",  color:"#3d5afe", ctx:"Cœur du parcours DWeb-DI : mes réalisations techniques majeures, du back-end industriel à l'hébergement." },
+  DEV:   { key:"DEV",   label:"Développer",  color:"#3d5afe", ctx:"Cœur du parcours DWeb-DI : réalisations techniques, du back-end industriel à l'hébergement." },
   COMP:  { key:"COMP",  label:"Comprendre",  color:"#0ea5a4", ctx:"Cadrer un projet, analyser un marché et traiter des données utilisateurs ou business." },
   CONC:  { key:"CONC",  label:"Concevoir",   color:"#8b5cf6", ctx:"La réflexion en amont, de la structuration d'une idée jusqu'aux choix ergonomiques." },
-  EXPR:  { key:"EXPR",  label:"Exprimer",    color:"#f59e0b", ctx:"Mon profil créatif : direction artistique, rédaction éditoriale, data-design." },
-  ENTR:  { key:"ENTR",  label:"Entreprendre",color:"#ef4444", ctx:"Autonomie, conformité légale, posture sécurité et gestion de projet en équipe." },
+  EXPR:  { key:"EXPR",  label:"Exprimer",    color:"#f59e0b", ctx:"Direction artistique, rédaction éditoriale, data-design." },
+  ENTR:  { key:"ENTR",  label:"Entreprendre",color:"#ef4444", ctx:"Autonomie, posture sécurité et gestion de projet." },
 };
 
 export const PROJECTS = [
@@ -164,32 +164,32 @@ export const PROJECTS = [
 
 export const RECAP = [
   { comp:"DEV", rows:[
-    ["AC24.01","Produire des pages et applications Web responsives","<b>Stage</b> : refonte responsive de l'IHM pour écrans tactiles industriels et smartphones. · <b>SAÉ 3.03</b> : grille fluide CSS3 (Inter) pour la lisibilité des graphiques Plotly sur mobile."],
-    ["AC24.02","Mettre en place ou développer un back office","<b>Stage</b> : interface d'administration pour configurer dimensions et prix des produits bois sans perte d'historique."],
-    ["AC24.03","Intégrer des interactions riches","<b>SAÉ 3.03</b> : compteurs KPI animés (requestAnimationFrame), requêtes Fetch asynchrones, modales JS réinterrogeant Plotly. · <b>SAÉ S4 (Système Solaire)</b> : boucle WebXR setAnimationLoop, contrôleurs VR natifs, cockpit 3D LIGHTSPEED et effet hyperespace."],
-    ["AC24.04","Modéliser les traitements d'une application Web","<b>Stage</b> : architecture en couches sous Blazor Server, liaison bidirectionnelle SignalR, mapping SQL via Entity Framework Core."],
-    ["AC24.06","Configurer une solution d'hébergement","<b>Projet Cyber</b> : Home Lab Debian sur Raspberry Pi 5 (Nginx Proxy Manager, Portainer). · <b>Stage</b> : déploiement sur serveur Debian (Nginx, HTTPS/TLS, Systemd)."],
-    ["AC34.02","Développer avec un framework côté serveur (N3)","<b>Stage</b> : maîtrise avancée de C# .NET et Blazor Server pour un logiciel lourd dépassant le cadre étudiant classique."],
+    ["AC24.01","Produire des pages et applications Web responsives","<b>Stage</b> : interface adaptée aux écrans industriels et aux smartphones. · <b>SAÉ 303</b> : mise en page responsive pour la lisibilité des graphiques sur mobile."],
+    ["AC24.02","Mettre en place ou développer un back office","<b>Stage</b> : interface d'administration pour configurer les dimensions et les prix des produits sans perdre l'historique."],
+    ["AC24.03","Intégrer des interactions riches","<b>SAÉ 303</b> : compteurs animés, chargements asynchrones et fenêtres d'analyse détaillée. · <b>SAÉ 402</b> : mode réalité virtuelle avec déplacement à la première personne et effet de saut en hyperespace."],
+    ["AC24.04","Modéliser les traitements d'une application Web","<b>Stage</b> : architecture en couches sous Blazor Server, communication temps réel et gestion de la base de données via Entity Framework Core."],
+    ["AC24.06","Configurer une solution d'hébergement","<b>Projet Cyber</b> : serveur domestique sur Raspberry Pi avec reverse proxy et gestion des conteneurs. · <b>Stage</b> : déploiement sur serveur Linux avec serveur web et connexions chiffrées."],
+    ["AC34.02","Développer avec un framework côté serveur (N3)","<b>Stage</b> : développement d'un logiciel métier complet en C# et Blazor Server, livré et utilisé en production réelle."],
   ]},
   { comp:"COMP", rows:[
-    ["AC21.01","Analyser la stratégie marketing d'une organisation","<b>SAÉ 3.02 (Vald)</b> : analyse de l'écosystème commercial du rap français (Échelon Records, Sony Music / Hall Access, Merkus)."],
-    ["AC21.03","Traiter des données avec des outils statistiques","<b>SAÉ 3.03</b> : agrégation d'un dataset Kaggle, indice de corrélation chômage/automatisation. · <b>SAÉ 3.01</b> : Heatmap des heures d'affluence de la BU. · <b>SAÉ S4 (Système Solaire)</b> : données JSON astrophysiques réelles (distances en km, périodes en jours), mapping logarithmique vers les unités de scène."],
-    ["AC21.04 · AC21.05","Identifier les parcours & cartographier l'UX","<b>SAÉ 3.01</b> : atelier de tri par cartes et Affinity Map. · <b>SAÉ S4 (Système Solaire)</b> : conception du HUD VR et du tutoriel de vol pour limiter les effets de cinétose."],
+    ["AC21.01","Analyser la stratégie marketing d'une organisation","<b>SAÉ 302</b> : analyse de l'écosystème d'un label indépendant, de sa distribution et de son management."],
+    ["AC21.03","Traiter des données avec des outils statistiques","<b>SAÉ 303</b> : traitement d'un dataset Kaggle et croisement des données par pays et secteur. · <b>SAÉ 301</b> : analyse des données de fréquentation de la BU. · <b>SAÉ 402</b> : intégration de données astrophysiques réelles avec conversion logarithmique."],
+    ["AC21.04 · AC21.05","Identifier les parcours & cartographier l'UX","<b>SAÉ 301</b> : ateliers de tri par cartes et carte d'affinité pour structurer l'arborescence de l'application. · <b>SAÉ 402</b> : conception de la navigation en réalité virtuelle pour rendre la scène lisible depuis le casque."],
   ]},
   { comp:"CONC", rows:[
-    ["AC22.02","Produire une recommandation ergonomique","<b>SAÉ 3.01</b> : recherche conceptuelle papier (Six-to-One) puis modélisation du concept retenu en wireframes. · <b>SAÉ S4 (Système Solaire)</b> : recommandation ergonomique en VR (document de cadrage d'agencement spatial des textes informatifs)."],
-    ["AC22.03","Co-construire une recommandation stratégique","<b>SAÉ 3.02 (Vald)</b> : plan d'action plurimédia structuré autour de la dualité artistique (Pandémonium vs Magnificat)."],
+    ["AC22.02","Produire une recommandation ergonomique","<b>SAÉ 301</b> : idéation rapide en atelier puis modélisation des wireframes des écrans clés. · <b>SAÉ 402</b> : réflexion sur l'ergonomie en réalité virtuelle pour organiser les informations dans l'espace 3D."],
+    ["AC22.03","Co-construire une recommandation stratégique","<b>SAÉ 302</b> : stratégie de communication construite autour du contraste artistique entre les deux albums de Vald."],
   ]},
   { comp:"EXPR", rows:[
-    ["AC23.01","Produire un écrit journalistique sourcé","<b>SAÉ 3.02 (Vald)</b> : biographies d'artistes, chroniques musicales et communiqués de presse ciblés."],
-    ["AC23.02 · AC23.03","Définir une iconographie & créer une identité visuelle","<b>SAÉ 3.01</b> : Design System (icônes vectorielles, bordeaux #9c2435, sémantique Roboto). · <b>SAÉ S4 (Système Solaire)</b> : textures HD (8k galactique, 2k planètes) et masques d'interface vectoriels SVG (HUD, cockpit)."],
-    ["AC23.04","Imaginer, écrire et scénariser pour le transmédia","<b>SAÉ 3.02 (Vald)</b> : scénarisation transmédia du plan de communication de l'artiste. · <b>SAÉ S4 (Système Solaire)</b> : scénarisation narrative (message de bienvenue, séquence d'envol, transition hyperespace)."],
-    ["AC23.06","Élaborer et produire de la 3D, des animations et designs sonores","<b>SAÉ 3.03</b> : data-design interactif (choroplèthes, matrices et box plots). · <b>SAÉ S4 (Système Solaire)</b> : modélisation 3D temps réel (.blend/.glb), système de particules (poussière, astéroïdes) et son spatialisé (propulsion, saut)."],
+    ["AC23.01","Produire un écrit journalistique sourcé","<b>SAÉ 302</b> : rédaction d'une biographie narrative, de chroniques de singles et d'un annuaire de contacts professionnels."],
+    ["AC23.02 · AC23.03","Définir une iconographie & créer une identité visuelle","<b>SAÉ 301</b> : charte graphique et bibliothèque d'icônes pour l'application mobile. · <b>SAÉ 402</b> : textures planétaires et éléments visuels de l'interface du casque."],
+    ["AC23.04","Imaginer, écrire et scénariser pour le transmédia","<b>SAÉ 302</b> : plan de communication articulé autour de deux albums aux univers opposés. · <b>SAÉ 402</b> : séquence narrative du voyage spatial, de l'accueil jusqu'au saut en hyperespace."],
+    ["AC23.06","Élaborer et produire de la 3D, des animations et designs sonores","<b>SAÉ 303</b> : visualisations interactives (carte du monde, carte de chaleur, diagrammes). · <b>SAÉ 402</b> : scène 3D temps réel avec planètes, lunes, ceintures d'astéroïdes et effets visuels."],
   ]},
   { comp:"ENTR", rows:[
-    ["AC25.01","Gérer un projet avec amélioration continue","<b>Stage</b> : développement itératif en binôme, intégration continue des fonctionnalités basée sur les tests internes."],
-    ["AC25.04","Collaborer au sein des organisations","<b>Stage</b> : collaboration Agile, gestion rigoureuse des commits et merges Git avec Thibault. · <b>SAÉ S4 (Système Solaire)</b> : architecture modulaire Vite, POO ES6+ avec héritage, commits Git descriptifs en français."],
-    ["AC25.06","Prendre en compte les contraintes juridiques & de sécurité","<b>Projet Cyber</b> : durcissement ANSSI — clés SSH asymétriques, blocage de télémétrie, isolation Docker, certificats TLS."],
+    ["AC25.01","Gérer un projet avec amélioration continue","<b>Stage</b> : développement par itérations successives, fonctionnalités testées et ajustées au fil du projet."],
+    ["AC25.04","Collaborer au sein des organisations","<b>Stage</b> : travail en binôme avec gestion des versions Git. · <b>SAÉ 402</b> : architecture modulaire avec classes héritées et historique de commits structuré."],
+    ["AC25.06","Prendre en compte les contraintes juridiques & de sécurité","<b>Projet Cyber</b> : sécurisation du serveur par clés SSH, isolation des applications et connexions chiffrées."],
   ]},
 ];
 
@@ -253,7 +253,7 @@ export const PV_TAGS = {
   dataviz: "Démo live · nouvel onglet",
   bu: "Livrable UX/UI · PDF",
   vald: "Dossier de presse · PDF",
-  cyber: "Schéma interactif",
+  cyber: "Rapport d'audit · Interactif",
   solaire: "Simulation interactive"
 };
 
@@ -262,7 +262,7 @@ export const PV_HEADS = {
   dataviz: "Démo interactive",
   bu: "Document source",
   vald: "Document source",
-  cyber: "Aperçu interactif",
+  cyber: "Rapport d'audit",
   solaire: "Aperçu animé"
 };
 

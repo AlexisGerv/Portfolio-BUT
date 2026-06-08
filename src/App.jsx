@@ -28,10 +28,11 @@ export default function App() {
       </div>
       <main className="wrap">
         <section className="hero">
-          <div className="eyebrow">BUT MMI · DWeb-DI · 2025-2026</div>
-          <h1>Du croquis papier au serveur en production,<br /><em>je conçois et je livre.</em></h1>
-          <p className="lede">Je suis Alexis Gervaud, étudiant en parcours Développement Web et Dispositifs Interactifs. En deux ans, je suis passé de l'intégration d'interfaces à la conception d'un logiciel industriel déployé en conditions réelles — en gardant le même fil rouge : comprendre un besoin, le concevoir avec soin, et le faire fonctionner pour de vrai.</p>
-          <p className="lede small">Ce portfolio raconte cette progression à travers six projets. Chaque carte déplie son analyse complète et un aperçu interactif de la réalisation ; le tableau final relie chaque AC aux projets qui le prouvent.</p>
+          <div className="eyebrow">BUT MMI · DWDI · 2025-2026</div>
+          <h1>Je code, je déploie,<br /><em>je teste ce qui casse.</em></h1>
+          <p className="lede">Je suis Alexis Gervaud, étudiant en développement web à l'IUT de Dijon. Ce qui m'intéresse, c'est la chaîne complète : écrire le code, le mettre en ligne, et comprendre comment on pourrait s'y introduire.</p>
+          <p className="lede">En deux ans, j'ai développé un logiciel industriel livré en production pour un vrai client, construit mon propre serveur à la maison, et commencé à apprendre à trouver les failles de ce que je construis. La curiosité et la rigueur sont les deux choses qui me font avancer sur chacun de ces projets.</p>
+          <p className="lede small">Ce portfolio présente six projets. Pour chacun, vous trouverez le contexte, ce que j'ai fait concrètement, et ce que j'en retiens honnêtement.</p>
           <div className="meta-row">
             <span className="pill"><b>Stage</b> · CT Concept — .NET / Blazor</span>
             <span className="pill"><b>SAÉ 3.03</b> · Dashboard Dataviz</span>
