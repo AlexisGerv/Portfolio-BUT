@@ -29,7 +29,7 @@ export default function App() {
           <p className="lede small">Ce portfolio raconte cette progression à travers six missions. Chaque carte déplie son analyse complète et un aperçu interactif de la réalisation ; le tableau final relie chaque AC aux missions qui le prouvent.</p>
           <div className="meta-row">
             <span className="pill"><b>Stage</b> · CT Concept — .NET / Blazor</span>
-            <span className="pill"><b>20/20</b> · SAÉ Dataviz</span>
+            <span className="pill"><b>SAÉ 3.03</b> · Dashboard Dataviz</span>
             <span className="pill"><b>6</b> missions · stage, SAÉ, projet perso</span>
             <span className="pill"><b>Cap</b> · Master Informatique</span>
           </div>

@@ -13,7 +13,7 @@ export default function DashboardLaunch() {
           </svg>
         </div>
         <div className="dash-info">
-          <h5>Tableau de bord — Impact de l'IA (SAÉ 3.03 · 20/20)</h5>
+          <h5>Tableau de bord — Impact de l'IA (SAÉ 3.03)</h5>
           <p>JavaScript natif &amp; Plotly JS · barres, box plot, heatmap, carte choroplèthe</p>
         </div>
         <a className="dash-launch" href="sae303-dashboard/index.html" target="_blank" rel="noopener noreferrer">Ouvrir le tableau de bord ↗</a>
