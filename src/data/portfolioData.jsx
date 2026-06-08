@@ -29,7 +29,8 @@ export const PROJECTS = [
       ["AC24.02","Mettre en place ou développer un back office"],
       ["AC24.04","Modéliser les traitements d'une application Web"],
       ["AC24.06","Configurer une solution d'hébergement adaptée"],
-      ["AC25.01","Gérer un projet avec une méthode agile"],
+      ["AC25.01","Gérer un projet avec une méthode d'amélioration continue"],
+      ["AC25.04","Collaborer au sein des organisations"],
       ["AC34.02","Développer avec un framework côté serveur (N3)"],
     ],
   },
@@ -50,8 +51,6 @@ export const PROJECTS = [
     },
     acs:[
       ["AC21.03","Traiter des données avec des outils statistiques"],
-      ["AC23.02","Définir une iconographie"],
-      ["AC23.05","Produire pour une communication plurimédia"],
       ["AC23.06","Produire de la visualisation de données / 3D"],
       ["AC24.01","Produire des applications Web responsives"],
       ["AC24.03","Développer des interactions riches"],
@@ -73,6 +72,7 @@ export const PROJECTS = [
       axis:"Le projet s'étant arrêté aux wireframes statiques, la suite logique aurait été de les transposer en prototype haute fidélité animé sous Figma, pour mener des tests de friction en conditions réelles.",
     },
     acs:[
+      ["AC21.03","Traiter des données avec des outils statistiques"],
       ["AC21.04","Identifier les parcours client (enquêtes terrain)"],
       ["AC21.05","Cartographier les expériences utilisateur"],
       ["AC22.02","Produire une recommandation ergonomique"],
@@ -100,8 +100,6 @@ export const PROJECTS = [
       ["AC22.03","Co-construire une recommandation stratégique"],
       ["AC23.01","Produire un écrit journalistique sourcé"],
       ["AC23.04","Écrire et scénariser pour le transmédia"],
-      ["AC23.05","Produire pour une communication plurimédia"],
-      ["AC25.04","Collaborer au sein des organisations"],
     ],
   },
   {
@@ -110,7 +108,7 @@ export const PROJECTS = [
     title:"SAÉ 402 - Système solaire interactif en réalité virtuelle",
     sub:"Projet universitaire · Seul · BUT MMI",
     rightTag:{label:"SAÉ", type:"type"},
-    comps:["DEV","COMP","EXPR","ENTR"],
+    comps:["DEV","COMP","CONC","EXPR","ENTR"],
     star:{
       s:"La SAÉ 402 demandait de concevoir une expérience web immersive exploitant les capacités graphiques natives du navigateur, sans plugin, en utilisant Three.js comme outil imposé. Le contexte simulé était celui d'un planétarium : créer un dispositif pédagogique et ludique sur le système solaire, accessible aussi bien à un jeune public qu'à des visiteurs adultes, directement depuis un casque de réalité virtuelle.",
       t:"Le principal défi était de concilier rigueur scientifique et lisibilité visuelle. Les distances réelles entre les planètes sont si colossales qu'une représentation à l'échelle exacte rendrait la scène illisible à l'œil. J'ai donc conçu un algorithme qui compresse les distances de façon logarithmique, en préservant les proportions relatives tout en gardant l'ensemble navigable. Les données des lunes de Jupiter et Saturne, distances et périodes orbitales en kilomètres et en jours, ont été intégrées depuis un fichier JSON et converties automatiquement en unités exploitables par la scène 3D. L'application représente ainsi huit planètes, soixante-sept lunes majeures et deux ceintures d'astéroïdes.",
@@ -120,10 +118,14 @@ export const PROJECTS = [
       axis:"L'étape suivante serait d'ajouter des shaders GLSL custom (atmosphères planétaires, halos stellaires) et un HUD contextuel en réalité virtuelle (panneau flottant d'informations sur la planète visée), ce qui nécessiterait d'explorer Troika-three-text ou un système de sprites HTML intégrés à la scène XR.",
     },
     acs:[
-      ["AC24.03","Développer des interactions riches & dispositifs interactifs (WebXR/VR)"],
       ["AC21.03","Traiter des données avec des outils statistiques / JSON réels"],
       ["AC21.05","Cartographier les expériences utilisateur (UX anti-cinétose VR)"],
+      ["AC22.02","Produire une recommandation ergonomique"],
+      ["AC23.02","Définir une iconographie"],
+      ["AC23.03","Créer et décliner une identité visuelle"],
+      ["AC23.04","Imaginer, écrire et scénariser en vue d'une communication multimédia"],
       ["AC23.06","Produire de la 3D / animation / visualisation de données"],
+      ["AC24.03","Développer des interactions riches & dispositifs interactifs (WebXR/VR)"],
       ["AC25.04","Collaborer au sein des organisations (architecture modulaire, Git)"],
     ],
   },
@@ -144,7 +146,6 @@ export const PROJECTS = [
     },
     acs:[
       ["AC24.06","Configurer une solution d'hébergement adaptée"],
-      ["AC25.02","Cartographier un écosystème"],
       ["AC25.06","Prendre en compte les contraintes juridiques & de sécurité"],
     ],
   },
@@ -162,20 +163,21 @@ export const RECAP = [
   { comp:"COMP", rows:[
     ["AC21.01","Analyser la stratégie marketing d'une organisation","<b>SAÉ 3.02 (Vald)</b> : analyse de l'écosystème commercial du rap français (Échelon Records, Sony Music / Hall Access, Merkus)."],
     ["AC21.03","Traiter des données avec des outils statistiques","<b>SAÉ 3.03</b> : agrégation d'un dataset Kaggle, indice de corrélation chômage/automatisation. · <b>SAÉ 3.01</b> : Heatmap des heures d'affluence de la BU. · <b>SAÉ S4 (Système Solaire)</b> : données JSON astrophysiques réelles (distances en km, périodes en jours), mapping logarithmique vers les unités de scène."],
-    ["AC21.04 · AC21.05","Identifier les parcours & cartographier l'UX","<b>SAÉ 3.01</b> : atelier de tri par cartes et Affinity Map. · <b>Stage</b> : immersion métier en scierie pour comprendre les frictions des opérateurs. · <b>SAÉ S4 (Système Solaire)</b> : conception du HUD VR et du tutoriel de vol pour limiter les effets de cinétose."],
+    ["AC21.04 · AC21.05","Identifier les parcours & cartographier l'UX","<b>SAÉ 3.01</b> : atelier de tri par cartes et Affinity Map. · <b>SAÉ S4 (Système Solaire)</b> : conception du HUD VR et du tutoriel de vol pour limiter les effets de cinétose."],
   ]},
   { comp:"CONC", rows:[
-    ["AC22.02","Produire une recommandation ergonomique","<b>SAÉ 3.01</b> : recherche conceptuelle papier (Six-to-One) puis modélisation du concept retenu en wireframes."],
+    ["AC22.02","Produire une recommandation ergonomique","<b>SAÉ 3.01</b> : recherche conceptuelle papier (Six-to-One) puis modélisation du concept retenu en wireframes. · <b>SAÉ S4 (Système Solaire)</b> : recommandation ergonomique en VR (document de cadrage d'agencement spatial des textes informatifs)."],
     ["AC22.03","Co-construire une recommandation stratégique","<b>SAÉ 3.02 (Vald)</b> : plan d'action plurimédia structuré autour de la dualité artistique (Pandémonium vs Magnificat)."],
   ]},
   { comp:"EXPR", rows:[
     ["AC23.01","Produire un écrit journalistique sourcé","<b>SAÉ 3.02 (Vald)</b> : biographies d'artistes, chroniques musicales et communiqués de presse ciblés."],
-    ["AC23.02 · AC23.03","Définir une iconographie & créer une identité visuelle","<b>SAÉ 3.01</b> : Design System (icônes vectorielles, bordeaux #9c2435, sémantique Roboto). · <b>SAÉ 3.02</b> : dossier de presse 11 pages, esthétique brute du rap contemporain."],
-    ["AC23.05 · AC23.06","Produire pour une communication plurimédia / data-design / 3D","<b>SAÉ 3.03</b> : data-design de pointe (choroplèthe, box plot, heatmap) pour vulgariser un enjeu technologique mondial. · <b>SAÉ S4 (Système Solaire)</b> : scène 3D complète temps réel (textures 2K, anneaux Saturne canal alpha, 1 500 astéroïdes InstancedMesh, fond Voie Lactée 8K) et environnement sonore spatialisé."],
+    ["AC23.02 · AC23.03","Définir une iconographie & créer une identité visuelle","<b>SAÉ 3.01</b> : Design System (icônes vectorielles, bordeaux #9c2435, sémantique Roboto). · <b>SAÉ S4 (Système Solaire)</b> : textures HD (8k galactique, 2k planètes) et masques d'interface vectoriels SVG (HUD, cockpit)."],
+    ["AC23.04","Imaginer, écrire et scénariser pour le transmédia","<b>SAÉ 3.02 (Vald)</b> : scénarisation transmédia du plan de communication de l'artiste. · <b>SAÉ S4 (Système Solaire)</b> : scénarisation narrative (message de bienvenue, séquence d'envol, transition hyperespace)."],
+    ["AC23.06","Élaborer et produire de la 3D, des animations et designs sonores","<b>SAÉ 3.03</b> : data-design interactif (choroplèthes, matrices et box plots). · <b>SAÉ S4 (Système Solaire)</b> : modélisation 3D temps réel (.blend/.glb), système de particules (poussière, astéroïdes) et son spatialisé (propulsion, saut)."],
   ]},
   { comp:"ENTR", rows:[
     ["AC25.01","Gérer un projet avec amélioration continue","<b>Stage</b> : développement itératif en binôme, intégration continue des fonctionnalités basée sur les tests internes."],
-    ["AC25.04","Collaborer au sein des organisations","<b>Stage</b> : collaboration Agile, gestion rigoureuse des commits et merges Git avec Thibault. · <b>SAÉ 3.01 / 3.02</b> : équipes projet avec répartition des tâches. · <b>SAÉ S4 (Système Solaire)</b> : architecture modulaire Vite, POO ES6+ avec héritage, commits Git descriptifs en français."],
+    ["AC25.04","Collaborer au sein des organisations","<b>Stage</b> : collaboration Agile, gestion rigoureuse des commits et merges Git avec Thibault. · <b>SAÉ S4 (Système Solaire)</b> : architecture modulaire Vite, POO ES6+ avec héritage, commits Git descriptifs en français."],
     ["AC25.06","Prendre en compte les contraintes juridiques & de sécurité","<b>Projet Cyber</b> : durcissement ANSSI — clés SSH asymétriques, blocage de télémétrie, isolation Docker, certificats TLS."],
   ]},
 ];
