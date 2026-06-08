@@ -9,17 +9,25 @@ import Gallery from './Gallery';
 export default function Preview(props) {
   const id = props.id;
   let body = null;
+  const hasPdf = id && Object.keys(PDFS).includes(id);
+  const hasGallery = id && Object.keys(GALLERIES).includes(id);
+
   if (id === "solaire") body = <SolarSystemPreview />;
   else if (id === "cyber") body = <CyberInfra />;
-  else if (PDFS[id]) body = <PdfViewer id={id} />;
+  else if (hasPdf) body = <PdfViewer id={id} />;
   else if (id === "dataviz") body = <DashboardLaunch />;
-  else if (GALLERIES[id]) body = <Gallery id={id} />;
+  else if (hasGallery) body = <Gallery id={id} />;
+
   if (!body) return null;
+
+  const title = (id && Object.keys(PV_HEADS).includes(id)) ? PV_HEADS[id] : "Aperçu";
+  const tag = (id && Object.keys(PV_TAGS).includes(id)) ? PV_TAGS[id] : "";
+
   return (
     <div className="preview">
       <div className="preview-head">
-        <div className="pv-title"><span className="lvdot"></span>{PV_HEADS[id] || "Aperçu"}</div>
-        <div className="pv-tag">{PV_TAGS[id]}</div>
+        <div className="pv-title"><span className="lvdot"></span>{title}</div>
+        <div className="pv-tag">{tag}</div>
       </div>
       {body}
     </div>

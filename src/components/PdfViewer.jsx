@@ -2,7 +2,11 @@ import React from 'react';
 import { PDFS } from '../data/portfolioData';
 
 export default function PdfViewer(props) {
-  const d = PDFS[props.id];
+  const id = props.id;
+  const d = (id && Object.keys(PDFS).includes(id)) ? PDFS[id] : null;
+  if (!d) {
+    return <div className="preview-stage"><p className="pv-hint">Document non trouvé.</p></div>;
+  }
   return (
     <div className="preview-stage">
       <p className="pv-hint">{d.note}</p>

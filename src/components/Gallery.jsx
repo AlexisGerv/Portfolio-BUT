@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import { GALLERIES } from '../data/portfolioData';
 
 export default function Gallery(props) {
-  const g = GALLERIES[props.id];
+  const id = props.id;
+  const g = (id && Object.keys(GALLERIES).includes(id)) ? GALLERIES[id] : null;
   const [i, setI] = useState(0);
+  if (!g) {
+    return <div className="preview-stage"><p className="pv-hint">Galerie non trouvée.</p></div>;
+  }
   const cur = g.shots[i];
   return (
     <div className="preview-stage">
