@@ -19,6 +19,12 @@ export default function App() {
             <a href="#projets">Projets</a>
             <a href="#competences">Compétences</a>
             <a href="#recap">Récapitulatif AC</a>
+            <a href="http://github.com/AlexisGerv" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ verticalAlign: 'middle' }}>
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+              GitHub
+            </a>
           </nav>
         </div>
       </header>
@@ -33,6 +39,14 @@ export default function App() {
           <p className="lede">Je suis Alexis Gervaud, étudiant en développement web à l'IUT de Dijon. Ce qui m'intéresse, c'est la chaîne complète : écrire le code, le mettre en ligne, et comprendre comment on pourrait s'y introduire.</p>
           <p className="lede">En deux ans, j'ai développé un logiciel industriel livré en production pour un vrai client, construit mon propre serveur à la maison, et commencé à apprendre à trouver les failles de ce que je construis. La curiosité et la rigueur sont les deux choses qui me font avancer sur chacun de ces projets.</p>
           <p className="lede small">Ce portfolio présente six projets. Pour chacun, vous trouverez le contexte, ce que j'ai fait concrètement, et ce que j'en retiens honnêtement.</p>
+          <div style={{ marginTop: '16px', marginBottom: '24px' }}>
+            <a href="http://github.com/AlexisGerv" target="_blank" rel="noopener noreferrer" className="chip" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+              <span>GitHub : AlexisGerv</span>
+            </a>
+          </div>
           <div className="meta-row">
             <span className="pill"><b>Stage</b> · CT Concept — .NET / Blazor</span>
             <span className="pill"><b>SAÉ 3.03</b> · Dashboard Dataviz</span>
@@ -125,7 +139,19 @@ export default function App() {
       <footer>
         <div className="wrap fgrid">
           <div><b>Alexis Gervaud</b> — Portfolio de compétences BUT MMI<br />Parcours Développement Web et Dispositifs Interactifs · 2025-2026</div>
-          <div>6 projets · 5 compétences · 26 apprentissages critiques<br /><span className="mono">alexisgerv@gmail.com</span></div>
+          <div>
+            6 projets · 5 compétences · 26 apprentissages critiques<br />
+            <span className="mono" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginTop: '4px' }}>
+              <span>alexisgerv@gmail.com</span>
+              <span style={{ color: 'var(--line)' }}>|</span>
+              <a href="http://github.com/AlexisGerv" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: 'var(--accent-ink)' }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                github.com/AlexisGerv
+              </a>
+            </span>
+          </div>
         </div>
       </footer>
     </React.Fragment>

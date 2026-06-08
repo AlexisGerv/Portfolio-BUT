@@ -92,7 +92,7 @@ export const PROJECTS = [
     id:"vald",
     index:"Projet 04 · SAÉ 3.02",
     title:"SAÉ 302 — Dossier de presse · Vald, Magnificat",
-    sub:"Projet universitaire · Solo · BUT MMI",
+    sub:"Projet universitaire · Seul · BUT MMI",
     rightTag:{label:"SAÉ", type:"type"},
     comps:["CONC","EXPR","COMP","ENTR"],
     techs: [],
