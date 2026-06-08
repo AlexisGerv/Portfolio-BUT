@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
-import { COMPETENCES, PROJECTS, RECAP } from './data/portfolioData';
+import { COMPETENCES, PROJECTS, RECAP, SKILLS } from './data/portfolioData';
 import Project from './components/Project';
+import SkillsSection from './components/SkillsSection';
 
 export default function App() {
   const [filter, setFilter] = useState(null);
+  const [selectedTech, setSelectedTech] = useState(null);
+
+  const activeTechObj = selectedTech ? SKILLS.find(s => s.id === selectedTech) : null;
 
   return (
     <React.Fragment>
@@ -11,6 +15,7 @@ export default function App() {
         <div className="wrap nav-inner">
           <div className="brand">Alexis Gervaud <span>· Portfolio MMI</span></div>
           <nav className="nav-links">
+            <a href="#skills">Langages & Outils</a>
             <a href="#projets">Projets</a>
             <a href="#competences">Compétences</a>
             <a href="#recap">Récapitulatif AC</a>
@@ -33,12 +38,22 @@ export default function App() {
             <span className="pill"><b>6</b> projets · stage, SAÉ, projet perso</span>
             <span className="pill"><b>Cap</b> · Master Informatique</span>
           </div>
-          <a href="#projets" className="scroll-hint" aria-label="Voir les projets">
+          <a href="#skills" className="scroll-hint" aria-label="Voir les compétences">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="6 9 12 15 18 9" />
             </svg>
           </a>
         </section>
+
+        <SkillsSection 
+          selectedTech={selectedTech} 
+          onSelectTech={function (techId) {
+            setSelectedTech(techId);
+            if (techId !== null) {
+              setFilter(null); // Reset competence filter when filtering by technology
+            }
+          }} 
+        />
 
         <section className="section" id="projets">
           <div className="section-head">
@@ -48,11 +63,11 @@ export default function App() {
           </div>
 
           <div className="filters" id="competences">
-            <button className={"chip " + (filter === null ? "active" : "")} onClick={function () { setFilter(null); }}>Tous les projets</button>
+            <button className={"chip " + (filter === null && selectedTech === null ? "active" : "")} onClick={function () { setFilter(null); setSelectedTech(null); }}>Tous les projets</button>
             {Object.keys(COMPETENCES).map(function (key) {
               const c = COMPETENCES[key];
               return (
-                <button key={c.key} className={"chip " + (filter === c.key ? "active" : "")} onClick={function () { setFilter(c.key); }}>
+                <button key={c.key} className={"chip " + (filter === c.key ? "active" : "")} onClick={function () { setFilter(c.key); setSelectedTech(null); }}>
                   <span className="dot" style={{ background: c.color }}></span>{c.label}
                 </button>
               );
@@ -60,8 +75,17 @@ export default function App() {
           </div>
 
           {filter && <p style={{ marginTop: "-20px", marginBottom: "24px", color: "var(--muted)", fontSize: "14.5px" }}>{COMPETENCES[filter].ctx}</p>}
+          
+          {activeTechObj && (
+            <div className="active-filter-banner">
+              Filtré par technologie : <span className="tech-banner-name">{activeTechObj.name}</span>
+              <button className="clear-filter-btn" onClick={function () { setSelectedTech(null); }} aria-label="Supprimer le filtre">
+                ✕
+              </button>
+            </div>
+          )}
 
-          {PROJECTS.map(function (p, i) { return <Project key={p.id} p={p} idx={i} filter={filter} />; })}
+          {PROJECTS.map(function (p, i) { return <Project key={p.id} p={p} idx={i} filter={filter} selectedTech={selectedTech} />; })}
         </section>
 
         <section className="section" id="recap">

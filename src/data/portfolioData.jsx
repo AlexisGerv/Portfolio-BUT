@@ -16,6 +16,7 @@ export const PROJECTS = [
     sub:"CT Concept - 10 semaines · Développement web · Dijon",
     rightTag:{label:"Stage", type:"type"},
     comps:["DEV","COMP","ENTR"],
+    techs: ["cs", "sql", "blazor", "linux", "git", "nginx"],
     star:{
       s:"CT Concept est une micro-entreprise spécialisée dans le développement d'applications pour les scieries. Son gérant, Cyril Tripier, avait déjà conçu la logique métier de son optimiseur de découpe, mais souhaitait lui donner une interface web accessible depuis n'importe quel appareil. Ne disposant pas des compétences pour le développement web, il a fait appel à un stagiaire pour concrétiser ce projet.",
       t:"J'ai pris en charge l'intégralité de la partie web en autonomie : concevoir l'interface, modéliser la base de données, développer les fonctionnalités métier, et déployer l'application en production. La contrainte était forte : le logiciel devait fonctionner en conditions réelles d'atelier, depuis un poste fixe comme depuis un smartphone. J'ai travaillé aux côtés de Thibault, le fils de Cyril, lui-même en alternance dans l'entreprise, ce qui a rendu la collaboration a la fois technique et humainement enrichissante. Par ailleurs, les technologies utilisées étaient entièrement nouvelles pour moi et absentes de ma formation.",
@@ -41,6 +42,7 @@ export const PROJECTS = [
     sub:"Projet universitaire · Seul · BUT MMI",
     rightTag:{label:"SAÉ", type:"type"},
     comps:["DEV","EXPR","COMP"],
+    techs: ["js", "htmlcss", "plotly"],
     star:{
       s:"La SAÉ 303 avait pour objectif de concevoir un dispositif interactif exploitant l'open data comme levier de communication et d'information. J'ai choisi de travailler sur un dataset Kaggle portant sur l'impact socio-économique des intelligences artificielles génératives entre 2020 et 2025, un sujet à la fois actuel et riche en indicateurs à croiser.",
       t:"Le défi était double : extraire les informations véritablement significatives d'un fichier CSV volumineux et hétérogène, puis les restituer sous une forme claire et engageante. Tout le traitement des données a été réalisé en JavaScript natif, sans bibliothèque externe, en développant des algorithmes d'agrégation statistique personnalisés pour croiser les données par pays et par secteur d'activité.",
@@ -63,6 +65,7 @@ export const PROJECTS = [
     sub:"Projet universitaire · Groupe de 4 · BUT MMI",
     rightTag:{label:"SAÉ", type:"type"},
     comps:["CONC","EXPR","COMP"],
+    techs: [],
     star:{
       s:"La SAÉ 301 nous a placés face à un défi concret : repenser les parcours numériques de la bibliothèque universitaire de l'IUT, dont le dispositif de relances par courriel était jugé peu efficace. L'enjeu était de moderniser l'expérience usager en basculant vers une application mobile avec des notifications instantanées, plus adaptées aux habitudes actuelles des étudiants.",
       t:"Pour cadrer le projet, nous avons rencontré un membre de l'équipe de la BU, qui nous a transmis des données réelles de fréquentation par demi-heure et partagé ses attentes pour la refonte. À partir de ces éléments, nous avons mené des ateliers de recherche utilisateur : un tri par cartes sur Miro pour organiser les grandes rubriques de l'application, et une carte d'affinité pour structurer les insights recueillis. Cela nous a permis de définir une arborescence cohérente autour de trois axes : la recherche de ressources, la gestion des prêts et les avis communautaires.",
@@ -87,6 +90,7 @@ export const PROJECTS = [
     sub:"Projet universitaire · Solo · BUT MMI",
     rightTag:{label:"SAÉ", type:"type"},
     comps:["CONC","EXPR","COMP","ENTR"],
+    techs: [],
     star:{
       s:"La SAÉ 302 prenait la forme d'une simulation de commande professionnelle : concevoir un dossier de presse pour un artiste musical dans le cadre d'une stratégie de communication plurimédia. J'ai choisi de travailler sur Vald, rappeur majeur du rap français, à l'occasion de la sortie de son album Magnificat en novembre 2025 un projet artistiquement ambitieux, annoncé par surprise lors d'un concert à l'Accor Arena, qui marque une rupture forte avec son album précédent Pandémonium.",
       t:"L'exercice demandait d'analyser en profondeur l'écosystème d'un artiste avant de produire le moindre contenu. J'ai donc étudié la structure économique et juridique qui entoure Vald : son label indépendant Echelon Records, son accord de distribution avec Sony Music via Hall Access, et le rôle de son management Merkus dans la gestion de sa carrière. J'ai également analysé ses données d'audience sur les plateformes, et décrypté la mutation de son univers artistique entre les deux albums, l'un ancré dans la noirceur, l'autre tourné vers la lumière et la pop.",
@@ -109,6 +113,7 @@ export const PROJECTS = [
     sub:"Projet universitaire · Seul · BUT MMI",
     rightTag:{label:"SAÉ", type:"type"},
     comps:["DEV","COMP","CONC","EXPR","ENTR"],
+    techs: ["js", "htmlcss", "threejs", "git"],
     star:{
       s:"La SAÉ 402 demandait de concevoir une expérience web immersive exploitant les capacités graphiques natives du navigateur, sans plugin, en utilisant Three.js comme outil imposé. Le contexte simulé était celui d'un planétarium : créer un dispositif pédagogique et ludique sur le système solaire, accessible aussi bien à un jeune public qu'à des visiteurs adultes, directement depuis un casque de réalité virtuelle.",
       t:"Le principal défi était de concilier rigueur scientifique et lisibilité visuelle. Les distances réelles entre les planètes sont si colossales qu'une représentation à l'échelle exacte rendrait la scène illisible à l'œil. J'ai donc conçu un algorithme qui compresse les distances de façon logarithmique, en préservant les proportions relatives tout en gardant l'ensemble navigable. Les données des lunes de Jupiter et Saturne, distances et périodes orbitales en kilomètres et en jours, ont été intégrées depuis un fichier JSON et converties automatiquement en unités exploitables par la scène 3D. L'application représente ainsi huit planètes, soixante-sept lunes majeures et deux ceintures d'astéroïdes.",
@@ -136,6 +141,7 @@ export const PROJECTS = [
     sub:"Projet personnel · Linux · Raspberry Pi 5",
     rightTag:{label:"Perso", type:"type"},
     comps:["DEV","COMP","ENTR"],
+    techs: ["bash", "docker", "linux", "nginx", "git"],
     star:{
       s:"La cybersécurité est le domaine vers lequel je souhaite m'orienter après mon BUT. Pour commencer à en acquérir les bases de façon concrète, j'ai monté de A à Z un environnement de laboratoire domestique sur Raspberry Pi 5, dans lequel j'héberge mes services web et mène des expérimentations techniques en autonomie.",
       t:"L'infrastructure repose sur Docker pour isoler les applications entre elles, un reverse proxy centralisant le trafic entrant et automatisant le chiffrement des connexions, et un durcissement du serveur SSH : port modifié, accès restreint aux clés cryptographiques, mots de passe désactivés. Des scripts d'automatisation gèrent les sauvegardes et l'audit des journaux système.",
@@ -307,3 +313,22 @@ export const CY_NODES = {
     )
   },
 };
+
+export const SKILLS = [
+  { id: "cs", name: "C#", category: "langage", level: 4, levelLabel: "Maîtrisé", desc: "Développement back-end, Blazor Server, applications de bureau." },
+  { id: "js", name: "JavaScript", category: "langage", level: 4.5, levelLabel: "Avancé", desc: "ES6+, manipulation du DOM, asynchronisme, Plotly.js, Three.js." },
+  { id: "htmlcss", name: "HTML / CSS", category: "langage", level: 4.5, levelLabel: "Avancé", desc: "Flexbox, Grid, designs responsifs, animations, accessibilité." },
+  { id: "sql", name: "SQL", category: "langage", level: 3.5, levelLabel: "Intermédiaire", desc: "Conception de bases de données relationnelles, requêtes complexes." },
+  { id: "bash", name: "Bash", category: "langage", level: 3.5, levelLabel: "Intermédiaire", desc: "Automatisation de tâches, scripts d'administration système." },
+  
+  { id: "blazor", name: "Blazor Server", category: "framework", level: 4, levelLabel: "Maîtrisé", desc: "Framework C# côté serveur pour applications web interactives." },
+  { id: "react", name: "React", category: "framework", level: 3.5, levelLabel: "Intermédiaire", desc: "Composants fonctionnels, state management, hooks, Vite." },
+  { id: "threejs", name: "Three.js", category: "framework", level: 3.5, levelLabel: "Intermédiaire", desc: "3D temps réel sur le web, WebGL, WebXR pour la réalité virtuelle." },
+  { id: "plotly", name: "Plotly.js", category: "framework", level: 3.5, levelLabel: "Intermédiaire", desc: "Dataviz interactive, graphiques statistiques et scientifiques." },
+  
+  { id: "docker", name: "Docker", category: "devops", level: 3.5, levelLabel: "Intermédiaire", desc: "Conteneurisation, déploiement isolé, Docker Compose." },
+  { id: "linux", name: "Linux", category: "devops", level: 4.5, levelLabel: "Avancé", desc: "Administration système Debian, durcissement SSH (ANSSI), hébergement." },
+  { id: "git", name: "Git", category: "devops", level: 4, levelLabel: "Maîtrisé", desc: "Gestion de version, branches, collaboration en équipe." },
+  { id: "nginx", name: "Nginx", category: "devops", level: 3.5, levelLabel: "Intermédiaire", desc: "Reverse proxy, configuration de serveurs web, SSL/TLS." }
+];
+
