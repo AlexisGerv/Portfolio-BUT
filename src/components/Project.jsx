@@ -34,7 +34,12 @@ export default function Project(props) {
         </div>
         <div className="proj-right">
           <span className={"grade " + (p.rightTag.type === "grade" ? "" : "type")}>{p.rightTag.label}</span>
-          <span className={"toggle " + (open ? "open" : "")}>+</span>
+          <div className={"proj-toggle-btn " + (open ? "open" : "")} aria-expanded={open}>
+            <span className="proj-toggle-text">{open ? "Réduire" : "Voir les détails"}</span>
+            <svg className="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
         </div>
       </div>
       <div className={"proj-body " + (open ? "open" : "")}>

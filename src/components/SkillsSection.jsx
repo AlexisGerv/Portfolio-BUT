@@ -49,7 +49,21 @@ export default function SkillsSection({ selectedTech, onSelectTech }) {
         <div className="skill-info">
           <div className="skill-header">
             <h4>{skill.name}</h4>
-            <span className="skill-tag">{skill.levelLabel}</span>
+            <div className="skill-tags-group">
+              {isActive ? (
+                <span className="skill-active-badge">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" className="active-check-icon">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  Filtré
+                </span>
+              ) : (
+                <span className="skill-hover-badge">
+                  Filtrer
+                </span>
+              )}
+              <span className="skill-tag">{skill.levelLabel}</span>
+            </div>
           </div>
           <p className="skill-desc">{skill.desc}</p>
           <div className="skill-footer">
