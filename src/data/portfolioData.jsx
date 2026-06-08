@@ -316,7 +316,7 @@ export const CY_NODES = {
 
 export const SKILLS = [
   { id: "cs", name: "C#", category: "langage", level: 4, levelLabel: "Maîtrisé", desc: "Développement back-end, Blazor Server, applications de bureau." },
-  { id: "js", name: "JavaScript", category: "langage", level: 4.5, levelLabel: "Avancé", desc: "ES6+, manipulation du DOM, asynchronisme, Plotly.js, Three.js." },
+  { id: "js", name: "JavaScript", category: "langage", level: 4.5, levelLabel: "Avancé", desc: "Manipulation du DOM, asynchronisme, Plotly.js, Three.js." },
   { id: "htmlcss", name: "HTML / CSS", category: "langage", level: 4.5, levelLabel: "Avancé", desc: "Flexbox, Grid, designs responsifs, animations, accessibilité." },
   { id: "sql", name: "SQL", category: "langage", level: 3.5, levelLabel: "Intermédiaire", desc: "Conception de bases de données relationnelles, requêtes complexes." },
   { id: "bash", name: "Bash", category: "langage", level: 3.5, levelLabel: "Intermédiaire", desc: "Automatisation de tâches, scripts d'administration système." },
