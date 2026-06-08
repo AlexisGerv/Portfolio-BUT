@@ -13,7 +13,7 @@ export const PROJECTS = [
     id:"stage",
     index:"Projet 01 · Stage",
     title:"Logiciel industriel d'optimisation de découpe",
-    sub:"CT Concept — 10 semaines · Développement web · Dijon",
+    sub:"CT Concept - 10 semaines · Développement web · Dijon",
     rightTag:{label:"Stage", type:"type"},
     comps:["DEV","COMP","ENTR"],
     star:{
@@ -36,8 +36,8 @@ export const PROJECTS = [
   {
     id:"dataviz",
     index:"Projet 02 · SAÉ 3.03",
-    title:"SAÉ 303 — Dashboard Dataviz",
-    sub:"Projet universitaire · Solo · BUT MMI",
+    title:"SAÉ 303 - Dashboard Dataviz",
+    sub:"Projet universitaire · Seul · BUT MMI",
     rightTag:{label:"SAÉ", type:"type"},
     comps:["DEV","EXPR","COMP"],
     star:{
@@ -107,8 +107,8 @@ export const PROJECTS = [
   {
     id:"solaire",
     index:"Projet 06 · SAÉ S4",
-    title:"SAÉ 402 — Système solaire interactif en réalité virtuelle",
-    sub:"Projet universitaire · Solo · BUT MMI",
+    title:"SAÉ 402 - Système solaire interactif en réalité virtuelle",
+    sub:"Projet universitaire · Seul · BUT MMI",
     rightTag:{label:"SAÉ", type:"type"},
     comps:["DEV","COMP","EXPR","ENTR"],
     star:{
@@ -130,7 +130,7 @@ export const PROJECTS = [
   {
     id:"cyber",
     index:"Projet 05 · Projet personnel",
-    title:"Home Lab — Infrastructure personnelle & initiation à la cybersécurité",
+    title:"Home Lab - Infrastructure personnelle & initiation à la cybersécurité",
     sub:"Projet personnel · Linux · Raspberry Pi 5",
     rightTag:{label:"Perso", type:"type"},
     comps:["DEV","COMP","ENTR"],
