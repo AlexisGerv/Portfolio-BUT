@@ -26,7 +26,7 @@ export default function App() {
           <div className="eyebrow">BUT MMI · DWeb-DI · 2025-2026</div>
           <h1>Du croquis papier au serveur en production,<br /><em>je conçois et je livre.</em></h1>
           <p className="lede">Je suis Alexis Gervaud, étudiant en parcours Développement Web et Dispositifs Interactifs. En deux ans, je suis passé de l'intégration d'interfaces à la conception d'un logiciel industriel déployé en conditions réelles — en gardant le même fil rouge : comprendre un besoin, le concevoir avec soin, et le faire fonctionner pour de vrai.</p>
-          <p className="lede small">Ce portfolio raconte cette progression à travers six missions analysées en méthode STAR. Chaque carte déplie son analyse complète et un aperçu interactif de la réalisation ; le tableau final relie chaque AC aux missions qui le prouvent.</p>
+          <p className="lede small">Ce portfolio raconte cette progression à travers six missions. Chaque carte déplie son analyse complète et un aperçu interactif de la réalisation ; le tableau final relie chaque AC aux missions qui le prouvent.</p>
           <div className="meta-row">
             <span className="pill"><b>Stage</b> · CT Concept — .NET / Blazor</span>
             <span className="pill"><b>20/20</b> · SAÉ Dataviz</span>
@@ -44,7 +44,7 @@ export default function App() {
           <div className="section-head">
             <div className="kicker">Les missions</div>
             <h2>Six projets, une trajectoire</h2>
-            <p>Filtrez par compétence pour voir quelles missions la démontrent, ou cliquez une carte pour déplier son aperçu interactif et son analyse STAR complète.</p>
+            <p>Filtrez par compétence pour voir quelles missions la démontrent, ou cliquez une carte pour déplier son aperçu interactif et son analyse complète.</p>
           </div>
 
           <div className="filters" id="competences">
@@ -78,7 +78,7 @@ export default function App() {
                 <p className="ctx">{co.ctx}</p>
                 <div className="tbl">
                   <table>
-                    <thead><tr><th>Apprentissage critique</th><th>Missions justificatives (preuves STAR)</th></tr></thead>
+                    <thead><tr><th>Apprentissage critique</th><th>Missions justificatives (preuves)</th></tr></thead>
                     <tbody>
                       {block.rows.map(function (r, i) {
                         return (
@@ -100,7 +100,7 @@ export default function App() {
       <footer>
         <div className="wrap fgrid">
           <div><b>Alexis Gervaud</b> — Portfolio de compétences BUT MMI<br />Parcours Développement Web et Dispositifs Interactifs · 2025-2026</div>
-          <div>Méthode STAR · 6 missions · 5 compétences · 26 apprentissages critiques<br /><span className="mono">alexisgerv@gmail.com</span></div>
+          <div>6 missions · 5 compétences · 26 apprentissages critiques<br /><span className="mono">alexisgerv@gmail.com</span></div>
         </div>
       </footer>
     </React.Fragment>

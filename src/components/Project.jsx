@@ -26,15 +26,11 @@ export default function Project(props) {
       </div>
       <div className={"proj-body " + (open ? "open" : "")}>
         {open && <Preview id={p.id} />}
-        {[[ "S", "Situation", s.s ], [ "T", "Tâche", s.t ], [ "A", "Actions", s.a ], [ "R", "Résultats", s.r ]].map(function (item) {
-          const l = item[0], name = item[1], txt = item[2];
-          return (
-            <div className="star" key={l}>
-              <div className="star-label"><span className="ltr">{l}</span>{name}</div>
-              <p>{txt}</p>
-            </div>
-          );
-        })}
+        <div className="star">
+          <p>
+            {s.s} {s.t} {s.a} {s.r}
+          </p>
+        </div>
         <div className="star eval">
           <div className="star-label">Auto-évaluation & pistes d'amélioration</div>
           <p>{s.eval}</p>
